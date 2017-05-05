@@ -45,7 +45,10 @@ file_movie_bow = 'movie_bow_100_30000.txt'
 acy_movie_bow = read_acy(file_movie_bow)
 title_movie_bow = 'Movie Baseline: Bag of Word feature'
 plot_acy(acy_movie_bow, title_movie_bow)
-# file_yelp_bow = 'yelp_bow_100_30000.txt'
-# yelp_bow = read_acy(file_yelp_bow)
+
+file_yelp_bow = 'yelp_bow_100_30000.txt'
+acy_yelp_bow = read_acy(file_yelp_bow)
+title_yelp_bow = 'Yelp Baseline: Bag of Word feature'
+plot_acy(acy_yelp_bow, title_yelp_bow)
 
 
