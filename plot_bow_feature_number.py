@@ -23,6 +23,7 @@ def read_acy(file_name):
 			acy_svm.append(float(''.join(svm)))
 			parameter.append(int(''.join(para)))
 
+
 	return [parameter, acy_nb, acy_lg, acy_dt, acy_svm]
 
 def plot_acy(acy, title):
@@ -35,20 +36,61 @@ def plot_acy(acy, title):
 	plt.plot(acy[0], acy[4], 'go')
 	p4, = plt.plot(acy[0], acy[4], 'g')
 	plt.legend([p1, p2, p3, p4], ['Naive Bayes', 'Logistic Regression', 'Decision Tree', 'Support Vector Machine'])
-	plt.axis([0, 30000, 0, 100])
+	plt.axis([0, 10000, 0, 100])
 	plt.ylabel('Accuracy')
 	plt.xlabel('Feature Size')
 	plt.title(title)
 	plt.show()
 
-file_movie_bow = 'movie_bow_100_30000.txt'
+# file_movie_bow = 'movie_bow_100_30000.txt'
+# acy_movie_bow = read_acy(file_movie_bow)
+# title_movie_bow = 'Movie Baseline: Bag of Word feature'
+# plot_acy(acy_movie_bow, title_movie_bow)
+
+# file_movie_bow = 'movie_bowRS_100_30000.txt'
+# acy_movie_bow = read_acy(file_movie_bow)
+# title_movie_bow = 'Movie: Bag of Word feature + Remove Stopwords'
+# plot_acy(acy_movie_bow, title_movie_bow)
+
+# file_movie_bow = 'movie_bowNeg_100_30000.txt'
+# acy_movie_bow = read_acy(file_movie_bow)
+# title_movie_bow = 'Movie: Bag of Word feature + Include Negation'
+# plot_acy(acy_movie_bow, title_movie_bow)
+
+# file_movie_bow = 'movie_bowADJV_100_30000.txt'
+# acy_movie_bow = read_acy(file_movie_bow)
+# title_movie_bow = 'Movie: Bag of Word feature + Adjectives and Adverbs'
+# plot_acy(acy_movie_bow, title_movie_bow)
+
+# file_movie_bow = 'movie_bowStem_100_30000.txt'
+# acy_movie_bow = read_acy(file_movie_bow)
+# title_movie_bow = 'Movie: Bag of Word feature + Remove Stopwords'
+# plot_acy(acy_movie_bow, title_movie_bow)
+
+file_movie_bow = 'yelp_bow_100_30000.txt'
 acy_movie_bow = read_acy(file_movie_bow)
-title_movie_bow = 'Movie Baseline: Bag of Word feature'
+title_movie_bow = 'Yelp Baseline: Bag of Word feature'
 plot_acy(acy_movie_bow, title_movie_bow)
 
-file_yelp_bow = 'yelp_bow_100_30000.txt'
-acy_yelp_bow = read_acy(file_yelp_bow)
-title_yelp_bow = 'Yelp Baseline: Bag of Word feature'
-plot_acy(acy_yelp_bow, title_yelp_bow)
+file_movie_bow = 'yelp_bowRS_100_30000.txt'
+acy_movie_bow = read_acy(file_movie_bow)
+title_movie_bow = 'Yelp: Bag of Word feature + Remove Stopwords'
+plot_acy(acy_movie_bow, title_movie_bow)
+
+file_movie_bow = 'yelp_bowNeg_100_30000.txt'
+acy_movie_bow = read_acy(file_movie_bow)
+title_movie_bow = 'Yelp: Bag of Word feature + Include Negation'
+plot_acy(acy_movie_bow, title_movie_bow)
+
+file_movie_bow = 'yelp_bowADJV_100_30000.txt'
+acy_movie_bow = read_acy(file_movie_bow)
+title_movie_bow = 'Yelp: Bag of Word feature + Adjectives and Adverbs'
+plot_acy(acy_movie_bow, title_movie_bow)
+
+file_movie_bow = 'yelp_bowStem_100_30000.txt'
+acy_movie_bow = read_acy(file_movie_bow)
+title_movie_bow = 'Yelp: Bag of Word feature + Remove Stopwords'
+plot_acy(acy_movie_bow, title_movie_bow)
+
 
 
