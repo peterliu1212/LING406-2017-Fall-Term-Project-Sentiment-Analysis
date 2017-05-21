@@ -1,3 +1,12 @@
+# Sentiment Classifier
+# LING 406 Intro to Computational Linguistics
+# University of Illinois at Urbana-Champaign
+# Cheng-Yang Peter Liu (cyliu4), 
+# May 8th, 2017
+#
+# This is the baseline from P. Bo, L. Lee, and S. Vaithyanathan
+# "Thumbs up?: sentiment classification using machine learning techniques."
+
 import nltk
 import nltk
 import random
