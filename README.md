@@ -1,8 +1,13 @@
 Sentiment Classifier
+
 LING 406 Intro to Computational Linguistics
+
 University of Illinois at Urbana-Champaign
+
 Cheng-Yang Peter Liu (cyliu4), 
+
 May 8th, 2017
+
 
 The code is run by Python 2.7 with numpy, scipy, sklearn, and NLTK libraries. 
 You can change different experiment setting in the experiment.py file. 
