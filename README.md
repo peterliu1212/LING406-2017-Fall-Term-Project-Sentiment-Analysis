@@ -10,7 +10,9 @@ May 8th, 2017
 
 
 The code is run by Python 2.7 with numpy, scipy, sklearn, and NLTK libraries. 
+
 You can change different experiment setting in the experiment.py file. 
+
 This folder contain the following files:
 
 1. experiment.py: main experiment file
